@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Fightree";
+  src: url("../fonts/Figtree-VariableFont_wght.ttf");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+primary colors
+*/
+/*
+neutral colors
+*/
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Fightree";
+  background-color: hsl(47, 88%, 63%);
+}
+
+.card {
+  display: grid;
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0.75rem 0.75rem 0 hsl(0, 0%, 7%);
+  padding: 2.2rem;
+  margin: 2rem;
+}
+.card .card-image img {
+  width: 100%;
+  border-radius: 13.3333333333px;
+}
+.card .card-body .btn {
+  margin-top: 2rem;
+}
+.card .card-body .published-date {
+  font-weight: 500;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.card .card-body h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding: 2rem 0;
+}
+.card .card-body .text {
+  color: hsl(0, 0%, 50%);
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+.card .card-footer {
+  padding-top: 2rem;
+}
+.card .card-footer .author {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
+  font-weight: 800;
+}
+.card .card-footer .author img {
+  width: 3.2rem;
+}
+.card .btn {
+  background-color: hsl(47, 88%, 63%);
+  width: -moz-min-content;
+  width: min-content;
+  padding: 0.8rem 1.5rem;
+  font-weight: 800;
+  border: 0;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card .btn:hover {
+  background-color: #f7dc7e;
+}
+.card a {
+  color: hsl(0, 0%, 7%);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.card a:hover, .card a:focus {
+  color: hsl(47, 88%, 63%);
+}
+.card .btn:focus,
+.card a:focus {
+  outline: 0.25rem solid hsl(0, 0%, 7%);
+  border-radius: 5px;
+}
+
+.attribution {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  .card {
+    max-width: 34rem;
+    box-shadow: 1.5rem 1.5rem 0 hsl(0, 0%, 7%);
+  }
+}/*# sourceMappingURL=style.css.map */
